@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<title>Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="CSS/W3.css">
+<link rel="stylesheet" href="CSS/W3-1.css">
+<link rel="stylesheet" href="CSS/font.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="CSS/font-awesome.css">
+<script src="JS/jquery-1.11.3.min.js"></script>
+        <script src="JS/bootstrap.min.js"></script>
+        <script src="JS/jquery.min.js"></script>
+        <script src="JS/js"></script>
+<style>
+.container {
+  position: relative;
+  width:300px;
+    height: 200px;
+}
+
+.image {
+  display: block;
+  width: 300px;
+  height: 200px;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+</style>
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif;color: black}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-white">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-center w3-white">
+  <!-- Avatar image in top left corner -->
+  <img src="img/man_smoke1.jpg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">
+    <i class="fa fa-home w3-xxlarge w3-text-black"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-text-black w3-bar-item w3-button w3-padding-large w3-text-black w3-hover-white w3-hover-grey">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-grey">
+    <i class="fa fa-eye w3-text-black w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-grey">
+    <i class="fa fa-envelope w3-xxlarge w3-text-black"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button " style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hover-black" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-white" id="home">
+    <h1 class="w3-jumbo"><span class="w3-text-black">I'm</span> Mohammad Naiem Sheikh.</h1>
+    <p>Web Developer & Designer.</p>
+    <img src="img/man_smoke1.jpg" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-black">Md. Naiem Sheikh</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <div class="w3-row">
+    <div style="margin-right: 2px">
+        <h5>Professional Profile</h5>
+        <hr>
+<p><b>Created several website templates. <br>
+Has strong knowledge in System Analysis, Data Mining and Pattern Recognition. <br>
+Built numbers of software with OOP programming language C# in .Net platform. <br>
+</b></p>
+   <h5>Key Qualification</h5>
+   <hr>
+   <p>
+Always try to show maximum willingness and creativity to work hard necessary to develop career, quick learner and ability
+to adapt from new environment. <br>
+Excellent communication and interpersonal skill. <br>
+Has Smart Negotiation Skill.
+
+   </p>
+   <h5>Educational Qualification</h5>
+   <hr>
+   <table class="w3-table">
+       <tr>
+           <th><h5>S.S.C</h5></th>
+           <th><h5>H.S.C</h5></th>
+           <th><h5>B.Sc.(Hons)</h5></th>
+       </tr>
+       <tr>
+       <td><p><b>Saleha Uchcha Madhayamik Bidyalaya, Dhaka</b></p></td>
+       <td><p><b>Uttara Scholars City College, Uttara, Dhaka</b></p></td>
+       <td><p><b>Shanto-Mariam University of Creative Technology </b></p></td>
+       </tr>
+       <tr>
+           <td><p><b>Science</b></p></td>
+           <td><p><b>Science</b></p></td>
+           <td><p><b>Computer Science & Engineering</b></p></td>
+       </tr>
+       <tr>
+           <td><p><b>4.00(Out of 5)</b></p></td>
+           <td><p><b>3.34(Out of 5)</b></p></td>
+           <td><p><b>3.22(Out of 4)</b></p></td>
+       </tr>
+       <tr>
+           <td><p>2011</p></td>
+           <td><p>2013</p></td>
+           <td><p>2017</p></td>
+       </tr>
+   </table>
+    </div>
+   
+    </div>
+    
+    <h3 class="w3-text-black">My Skills</h3>
+    <p class="w3-wide">Development</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">Web Design</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">System Analysis</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div>
+    <p class="w3-wide">Data Analysis</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div>
+    
+    <br>
+    
+
+    <a href="Md.Naiem.docx" class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </a>
+    
+    <!-- Grid for pricing tables -->
+
+    <!-- End Grid/Pricing tables -->
+    </div>
+    
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-black">My Portfolio</h3>  
+    
+    
+
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+   <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
+  </div>
+
+  <div class="w3-row-padding" style="margin-left: 100px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="container">
+  <img src="img/Analytics.png" alt="Analytics" class="image" style="width:300px;height: 200px">
+  <div class="overlay">
+    <div class="text"><a href="img/DOS_Analytics.png" class="btn w3-btn">Full View</a></div>
+  </div>
+</div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="container">
+  <img src="img/app.png" alt="App" class="image" style="width:300px;height: 200px">
+  <div class="overlay">
+    <div class="text"><a href="img/App-launch.jpg" class="btn w3-btn">Full View</a></div>
+  </div>
+</div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="container">
+  <img src="img/Appartment.png" alt="Appartment" class="image" style="width:300px;height: 200px">
+  <div class="overlay">
+    <div class="text"><a href="img/Appartment.png" class="btn w3-btn">Full View</a></div>
+  </div>
+</div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="container">
+  <img src="Arc.png" alt="Architcture" class="image" style="width:300px;height: 200px">
+  <div class="overlay">
+    <div class="text"><a href="img/Arc.png" class="btn w3-btn">Full View</a></div>
+  </div>
+</div>
+    </div>
+  </div>
+<div class="w3-row-padding" style="margin-left: 100px">
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="container">
+  <img src="img/cloth.png" alt="Fashion" class="image" style="width:300px;height: 200px">
+  <div class="overlay">
+    <div class="text"><a href="img/cloth.png" class="btn w3-btn">Full View</a></div>
+  </div>
+</div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="container">
+  <img src="img/hotel.png" alt="Hotel" class="image" style="width:300px;height: 200px">
+  <div class="overlay">
+    <div class="text"><a href="img/hotel.png" class="btn w3-btn">Full View</a></div>
+  </div>
+</div>
+    </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="container">
+  <img src="img/DCompany.png" alt="Company" class="image" style="width:300px;height: 200px">
+  <div class="overlay">
+    <div class="text"><a href="img/Company.png" class="btn w3-btn">Full View</a></div>
+  </div>
+</div>
+
+    </div>
+    </div>
+<h1 class="w3-margin-left">For More</h1>
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-black">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Dhaka</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +880 1681733668</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: naiem662@gmail.com</p>
+    </div><br>
+    <p>Lets get in touch. Send me a message:</p>
+
+    
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <a href="https://www.facebook.com/na.iem.16"><i class="fa fa-facebook-official w3-hover-white"></i></a>
+    <a href="https://www.linkedin.com/in/md-naiem-sheikh-58162a147/"><i class="fa fa-linkedin w3-hover-white"></i></a>
+    <a href="https://www.google.com/gmail/"><i class="fa fa-google w3-hover-white"></i></a>
+    <a href="https://github.com/naiemsheikh"><i class="fa fa-github w3-hover-white"></i></a>
+   
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
+
